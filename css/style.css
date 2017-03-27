@@ -96,7 +96,8 @@ p {
     .navbar.navbar-toggleable-md .btn.dropdown-toggle::after {
       margin: 0 0 0 8px; }
     .navbar.navbar-toggleable-md .btn.btn-outline-secondary.active, .navbar.navbar-toggleable-md .btn.btn-outline-secondary.focus, .navbar.navbar-toggleable-md .btn.btn-outline-secondary:active, .navbar.navbar-toggleable-md .btn.btn-outline-secondary:focus,
-    .navbar.navbar-toggleable-md .btn .btn-outline-secondary.active, .navbar.navbar-toggleable-md .btn .btn-outline-secondary:active {
+    .navbar.navbar-toggleable-md .btn .btn-outline-secondary.active,
+    .navbar.navbar-toggleable-md .btn .btn-outline-secondary:active {
       background-color: rgba(255, 255, 255, 0.15); }
     .navbar.navbar-toggleable-md .btn.btn-outline-secondary:hover {
       background-color: rgba(255, 255, 255, 0.1); }
@@ -152,8 +153,8 @@ p {
     margin-bottom: 24px; }
     .header h1 span {
       display: block;
-      font-size: .65em;
-      opacity: .5;
+      font-size: 0.65em;
+      opacity: 0.5;
       margin-bottom: 6px; }
   .header a.btn {
     margin: 0 4px; }
@@ -266,7 +267,7 @@ section {
   .intro a.video:hover::after {
     background-color: rgba(0, 0, 0, 0.35); }
   .intro a.video:hover span {
-    opacity: .5; }
+    opacity: 0.5; }
 .intro .introblurb {
   background: #FFFFFF;
   box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.15);

@@ -3,7 +3,6 @@ $lightGray: #F8F9FB;
 $black: #4A4A4A;
 $gray: #9B9B9B;
 $blue: #4A90E2;
-
 // mixins
 @mixin breakpoint($class) {
      @if $class == xs{
@@ -67,32 +66,34 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+    font-size: 24px;
     @include breakpoint(sm) {
         font-size: 28px;
     }
 }
 
 h3 {
-  font-size: 20px;
+    font-size: 20px;
     @include breakpoint(sm) {
         font-size: 22px;
     }
 }
+
 p {
     color: $gray;
     font-size: 15px;
     line-height: 21px;
-
     @include breakpoint(sm) {
         font-size: 17px;
         line-height: 26px;
+
         &.smaller {
-          font-size: 15px;
-          line-height: 21px;
+            font-size: 15px;
+            line-height: 21px;
         }
     }
 }
+
 .btn {
     border-radius: 3px;
     -webkit-transition: all 0.3s ease-out;
@@ -183,7 +184,8 @@ p {
         &.btn-outline-secondary.focus,
         &.btn-outline-secondary:active,
         &.btn-outline-secondary:focus,
-        .btn-outline-secondary.active, .btn-outline-secondary:active         {
+        .btn-outline-secondary.active,
+        .btn-outline-secondary:active {
             background-color: rgba(#fff, .15);
         }
 
@@ -192,8 +194,7 @@ p {
         }
     }
 
-    .show>.btn-outline-secondary.dropdown-toggle
-     {
+    .show > .btn-outline-secondary.dropdown-toggle {
         background-color: rgba(#fff, .15);
     }
 
@@ -267,7 +268,6 @@ p {
                 width: 74px;
             }
         }
-
         // .logoDivider {
         //     margin-top: 4px;
         //     display: none;
@@ -287,13 +287,14 @@ p {
 
     h1 {
         margin-bottom: 24px;
+
         span {
-          display: block;
-          font-size: .65em;
-          // text-transform: uppercase;
-          // clear: right;
-          opacity: .5;
-          margin-bottom: 6px;
+            display: block;
+            font-size: 0.65em;
+            // text-transform: uppercase;
+            // clear: right;
+            opacity: 0.5;
+            margin-bottom: 6px;
         }
     }
 
@@ -305,8 +306,8 @@ p {
         padding: 100px 0;
     }
     @include breakpoint(md) {
-      height: 560px;
-      padding: 140px 0;
+        height: 560px;
+        padding: 140px 0;
     }
 }
 
@@ -367,7 +368,6 @@ section {
     a.video {
         cursor: pointer;
 
-
         video {
             width: calc(100% + 30px);
             margin: 0 -15px;
@@ -424,16 +424,17 @@ section {
                 margin-bottom: -3px;
                 // position: absolute;
             }
+        }
 
-        }
         &:hover {
-          &::after{
-            background-color: rgba(#000, .35);
-          }
-        span {
-          opacity: .5;
+            &::after {
+                background-color: rgba(#000, .35);
+            }
+
+            span {
+                opacity: 0.5;
+            }
         }
-      }
     }
 
     .introblurb {
@@ -492,15 +493,8 @@ section {
 
 .features {
     text-align: center;
-    // img {
-    //   width: 80px;
-    //   height: 80px;
-    //   border-radius: 100px;
-    //   margin-bottom: 16px;
-    // }
     .col-lg-4 {
         .icon {
-            // border: 2px solid rgba($blue, .2);
             background-color: rgba($blue, .07);
             width: 80px;
             height: 80px;
@@ -537,7 +531,6 @@ section {
                 -ms-transform: translate(0px,-10px);
                 -o-transform: translate(0px,-10px);
                 transform: translate(0px,-10px);
-
             }
         }
     }
@@ -553,7 +546,6 @@ section {
     content: '';
     position: absolute;
     left: 0;
-    // top: -500px;
     overflow: visible;
     width: 100%;
     height: 610px;
@@ -576,93 +568,105 @@ section {
         height: 420px;
     }
 }
+
 .cta {
     text-align: center;
     margin-bottom: 80px;
 }
 
 .socials {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  color: #fff;
-  font-size: 20px;
-  @include breakpoint(lg) {
-    top: 210px;
-    left: calc(((100vw - 1140px) / 2) - 64px);
-  }
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 20px;
+    @include breakpoint(lg) {
+        top: 210px;
+        left: calc(((100vw - 1140px) / 2) - 64px);
+    }
 
-  .socialLinks {
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
-    color:#fff;
-    margin-bottom: 4px;
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-decoration: none;
-    -webkit-transition: all 0.35s ease-out;
-    -moz-transition: all 0.35s ease-out;
-    -ms-transition: all 0.35s ease-out;
-    -o-transition: all 0.35s ease-out;
-    transition: all 0.35s ease-out;
-    .socialLabel {
-      font-size: 15px;
-    line-height: 21px;
-      color: #fff;
-      display: inline-block;
-      opacity: 0;
-      -webkit-transition: all 0.35s ease-out;
-      -moz-transition: all 0.35s ease-out;
-      -ms-transition: all 0.35s ease-out;
-      -o-transition: all 0.35s ease-out;
-      transition: all 0.35s ease-out;
-    }
-    &.showLabel, &:hover {
-      width: 95px;
-      .socialLabel {
-        opacity: 1;
-      }
-      &:hover {
-        // opacity: 1;
-        -webkit-transform: translate(3px,0px);
-        -moz-transform: translate(3px,0px);
-        -ms-transform: translate(3px,0px);
-        -o-transform: translate(3px,0px);
-        transform: translate(3px,0px);
-      }
-    }
-  }
-  .socialsFacebook {
-    background: #3b5998;
-    padding: 5px 16px;
-    .socialLabel {
-      position: relative;
-      top: -3px;
-      left: 10px;
-    }
-  }
-  .socialsTwitter {
-    background: #1da1f2;
-    padding: 5px 11px;
-    .socialLabel {
-      position: relative;
-      top: -3px;
-      left: 5px;
-    }
-  }
-  .socialsLinkedin {
-    background: #0077b5;
-    padding: 5px 13px;
-    .socialLabel {
-      position: relative;
-      top: -3px;
-      left: 7px;
-    }
-  }
+    .socialLinks {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        color: #fff;
+        margin-bottom: 4px;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-decoration: none;
+        -webkit-transition: all 0.35s ease-out;
+        -moz-transition: all 0.35s ease-out;
+        -ms-transition: all 0.35s ease-out;
+        -o-transition: all 0.35s ease-out;
+        transition: all 0.35s ease-out;
 
+        .socialLabel {
+            font-size: 15px;
+            line-height: 21px;
+            color: #fff;
+            display: inline-block;
+            opacity: 0;
+            -webkit-transition: all 0.35s ease-out;
+            -moz-transition: all 0.35s ease-out;
+            -ms-transition: all 0.35s ease-out;
+            -o-transition: all 0.35s ease-out;
+            transition: all 0.35s ease-out;
+        }
+
+        &.showLabel,
+        &:hover {
+            width: 95px;
+
+            .socialLabel {
+                opacity: 1;
+            }
+
+            &:hover {
+                // opacity: 1;
+                -webkit-transform: translate(3px,0px);
+                -moz-transform: translate(3px,0px);
+                -ms-transform: translate(3px,0px);
+                -o-transform: translate(3px,0px);
+                transform: translate(3px,0px);
+            }
+        }
+    }
+
+    .socialsFacebook {
+        background: #3b5998;
+        padding: 5px 16px;
+
+        .socialLabel {
+            position: relative;
+            top: -3px;
+            left: 10px;
+        }
+    }
+
+    .socialsTwitter {
+        background: #1da1f2;
+        padding: 5px 11px;
+
+        .socialLabel {
+            position: relative;
+            top: -3px;
+            left: 5px;
+        }
+    }
+
+    .socialsLinkedin {
+        background: #0077b5;
+        padding: 5px 13px;
+
+        .socialLabel {
+            position: relative;
+            top: -3px;
+            left: 7px;
+        }
+    }
 }
+
 .modal-content {
     background-color: transparent;
     border: none;
@@ -686,12 +690,11 @@ section {
 .modal-dialog {
     width: 100vw;
     margin: 0;
-// &.modal-lg {
-//   width: 100%;
-// }
+
     .modal-body {
         padding: 15% 0;
         width: 100vw;
+
         iframe {
             height: 210px;
             @include breakpoint(sm) {
@@ -710,7 +713,7 @@ section {
             // width: 100%;
         }
         @include breakpoint(lg) {
-          width: 100%;
+            width: 100%;
         }
     }
     @include breakpoint(lg) {
