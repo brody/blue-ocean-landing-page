@@ -95,10 +95,13 @@ p {
     margin-top: 1px; }
     .navbar.navbar-toggleable-md .btn.dropdown-toggle::after {
       margin: 0 0 0 8px; }
-    .navbar.navbar-toggleable-md .btn.btn-outline-secondary.active, .navbar.navbar-toggleable-md .btn.btn-outline-secondary.focus, .navbar.navbar-toggleable-md .btn.btn-outline-secondary:active, .navbar.navbar-toggleable-md .btn.btn-outline-secondary:focus {
+    .navbar.navbar-toggleable-md .btn.btn-outline-secondary.active, .navbar.navbar-toggleable-md .btn.btn-outline-secondary.focus, .navbar.navbar-toggleable-md .btn.btn-outline-secondary:active, .navbar.navbar-toggleable-md .btn.btn-outline-secondary:focus,
+    .navbar.navbar-toggleable-md .btn .btn-outline-secondary.active, .navbar.navbar-toggleable-md .btn .btn-outline-secondary:active {
       background-color: rgba(255, 255, 255, 0.15); }
     .navbar.navbar-toggleable-md .btn.btn-outline-secondary:hover {
       background-color: rgba(255, 255, 255, 0.1); }
+  .navbar.navbar-toggleable-md .show > .btn-outline-secondary.dropdown-toggle {
+    background-color: rgba(255, 255, 255, 0.15); }
   .navbar.navbar-toggleable-md .nav-link {
     padding: 0.3rem 0.75rem 0.4rem; }
     .navbar.navbar-toggleable-md .nav-link.btn {

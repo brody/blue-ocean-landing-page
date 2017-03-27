@@ -182,13 +182,19 @@ p {
         &.btn-outline-secondary.active,
         &.btn-outline-secondary.focus,
         &.btn-outline-secondary:active,
-        &.btn-outline-secondary:focus {
+        &.btn-outline-secondary:focus,
+        .btn-outline-secondary.active, .btn-outline-secondary:active         {
             background-color: rgba(#fff, .15);
         }
 
         &.btn-outline-secondary:hover {
             background-color: rgba(#fff, .1);
         }
+    }
+
+    .show>.btn-outline-secondary.dropdown-toggle
+     {
+        background-color: rgba(#fff, .15);
     }
 
     .nav-link {
