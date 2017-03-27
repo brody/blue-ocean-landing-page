@@ -281,6 +281,14 @@ p {
 
     h1 {
         margin-bottom: 24px;
+        span {
+          display: block;
+          font-size: .65em;
+          // text-transform: uppercase;
+          // clear: right;
+          opacity: .5;
+          margin-bottom: 6px;
+        }
     }
 
     a.btn {

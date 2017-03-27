@@ -147,6 +147,11 @@ p {
           width: 74px; } }
   .header h1 {
     margin-bottom: 24px; }
+    .header h1 span {
+      display: block;
+      font-size: .65em;
+      opacity: .5;
+      margin-bottom: 6px; }
   .header a.btn {
     margin: 0 4px; }
   @media (min-width: 767px) {
