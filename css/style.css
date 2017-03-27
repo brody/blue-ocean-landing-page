@@ -326,6 +326,13 @@ section {
     transition: all 0.5s ease-out; }
     .features .col-lg-4 .icon span {
       margin-left: 2px; }
+    .features .col-lg-4 .icon svg {
+      height: 48px;
+      width: 35px;
+      margin-left: 2px;
+      padding-top: 12px; }
+      .features .col-lg-4 .icon svg path {
+        fill: #4a90e2; }
   .features .col-lg-4 h3 {
     margin-bottom: 8px; }
   .features .col-lg-4 p {

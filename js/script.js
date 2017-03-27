@@ -34,14 +34,11 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-
 function goclicky(meh) {
   var x = screen.width / 2 - 700 / 2;
   var y = screen.height / 2 - 600 / 2;
   window.open(meh.href, "", 'height=700,width=600,left=' + x + ',top=' + y);
 }
-
-
 
 // Youtube modal
 
