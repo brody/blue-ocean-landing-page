@@ -22,39 +22,45 @@
     <meta name="twitter:description" content="Jenkins Blue Ocean brings Pipeline as code, a new setup experience and other UI improvements all while maintaining total backwards compatibility with existing Jenkins installations.">
     <meta name="twitter:creator" content="@JenkinsCI">
     <!-- Twitter Summary card images must be at least 120x120px -->
-    <meta name="twitter:image" content="http://dev.brody.com/blueocean/img/blueocean.gif">
-    <!--update-->
-    <meta name="twitter:image:src" content="http://dev.brody.com/blueocean/img/blueocean.gif">
+    <meta name="twitter:image" content="img/blueocean.gif">
+    <!--update ^^^-->
+    <meta name="twitter:image:src" content="img/blueocean.gif">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Introducing Jenkins Blue Ocean" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://dev.brody.com/blueocean/" />
-    <!--update-->
-    <meta property="og:image" content="http://dev.brody.com/blueocean/img/blueocean.gif" />
-    <!--update-->
+    <meta property="og:url" content="https://jenkins.io/projects/blueocean/" />
+    <!--update ^^^-->
+    <meta property="og:image" content="img/blueocean.gif" />
+    <!--update - full url? ^^^-->
     <meta property="og:description" content="Jenkins Blue Ocean brings Pipeline as code, a new setup experience and other UI improvements all while maintaining total backwards compatibility with existing Jenkins installations." />
     <meta property="og:site_name" content="Introducting Jenkins Blue Ocean" />
     <meta property="fb:admins" content="Facebook numeric ID" />
-    <!--update-->
+    <!--update ^^^-->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/wow.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse top bg-inverse" id="ji-toolbar">
         <div class="container">
 
-            <button class="navbar-toggler navbar-toggler-rght hidden-lg-up float-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2"><i class="ion-navicon"></i></button>
+            <button class="navbar-toggler navbar-toggler-rght hidden-lg-up float-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar"><i class="ion-navicon"></i></button>
             <a class="navbar-brand" href="#">Jenkins</a>
 
-            <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+            <div class="collapse navbar-collapse" id="CollapsingNavbar">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://jenkins.io/node">Blog</a>
@@ -218,7 +224,7 @@
             </div>
             <div class="col-xs-12 col-sm-10 push-sm-2 col-md-8 push-md-4 col-lg-5 push-lg-7">
                 <div class="introblurb wow fadeInUp" data-wow-delay="0.1s">
-                    <h2>Continous Delivery is no longer for the experts.</h2>
+                    <h2>Continous Delivery is no longer for the experts</h2>
                     <p>Thats why we've built Blue Ocean: the continuous delivery tool for teams just like yours.</p>
                     <p>It's a brand new way to use Jenkins that even your boss's boss can understand 😉</p>
                     <a class="btn btn-secondary" href="#" role="button">Yes please!</a>
@@ -253,7 +259,7 @@
 
                         <h3>Pipeline visualization</h3>
                         <p class="smaller">Visually represent pipelines so that even your boss's boss can understand.
-</p>
+                        </p>
                     </div>
                     <div class="clearfix hidden-lg-up"></div>
                     <div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
@@ -262,7 +268,7 @@
                         </div>
 
                         <h3>Diagnosis</h3>
-                        <p class="smaller">Locate problems instantly and say <em>good-riddance</em> to endlessly scanning through logs.</p>
+                        <p class="smaller">Locate problems instantly and say <br class="hidden-lg-down"><em>good-riddance</em> to endlessly scanning through logs.</p>
                     </div>
                     <div class="clearfix hidden-md-down"></div>
                     <div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
@@ -284,7 +290,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
                         <div class="icon">
-                          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <path d="M7.38341175,23.0798118 C3.04752489,21.2711041 0,16.9914458 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,16.9914458 20.9524751,21.2711041 16.6165883,23.0798118 L13.5388628,15.6932706 C14.9841584,15.090368 16,13.6638153 16,12 C16,9.790861 14.209139,8 12,8 C9.790861,8 8,9.790861 8,12 C8,13.6638153 9.01584163,15.090368 10.4611372,15.6932706 L7.38341175,23.0798118 Z" id="Combined-Shape" stroke="none" fill="#000000" fill-rule="evenodd"></path>
                           </svg>
                         </div>
@@ -305,20 +311,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.2s">
-                    <blockquote class="twitter-tweet" data-lang="en">
-                        <p lang="en" dir="ltr">If you don&#39;t like default <a href="https://twitter.com/hashtag/jenkins?src=hash">#jenkins</a> look and feel style, try installing blue ocean plugin <a href="https://twitter.com/hashtag/ContinuousDelivery?src=hash">#ContinuousDelivery</a>                            <a href="https://twitter.com/hashtag/ContinuousIntegration?src=hash">#ContinuousIntegration</a></p>&mdash; Rafal Kozlowski (@rafaltwitts) <a href="https://twitter.com/rafaltwitts/status/840562199928143873">March 11, 2017</a></blockquote>
+                    <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+                        <p lang="en" dir="ltr">I&#39;ve just been testing <a href="https://twitter.com/jenkinsci">@jenkinsci</a> with the new UI/UX. Awesome! Very good job! Creating pipelines is now dead simple. <a href="https://t.co/dSFlauhpxd">pic.twitter.com/dSFlauhpxd</a></p>&mdash;
+                        Jochen Breuer (@mr_brejoc) <a href="https://twitter.com/mr_brejoc/status/846108945794191361">March 26, 2017</a></blockquote>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.4s">
-                    <blockquote class="twitter-tweet" data-lang="en">
-                        <p lang="en" dir="ltr">jenkins&#39;s blue ocean ux looks dope. I&#39;m high and I almost kiss the sky<a href="https://twitter.com/hashtag/jenkins?src=hash">#jenkins</a>-ux <a href="https://twitter.com/hashtag/blueocean?src=hash">#blueocean</a>
-                            <a href="https://twitter.com/hashtag/jenkinsci?src=hash">#jenkinsci</a>
-                        </p>&mdash; Patriot Fab (@fab52) <a href="https://twitter.com/fab52/status/822483731126493184">January 20, 2017</a>
-                    </blockquote>
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="en">
+                        <p lang="en" dir="ltr"><a href="https://twitter.com/i386">@i386</a> blue ocean is life 👌🏻 you have made work fun again</p>&mdash; Gabriel Csapo (@gabriel_csapo) <a href="https://twitter.com/gabriel_csapo/status/845506373785796608">March 25, 2017</a></blockquote>
                 </div>
                 <div class="col-lg-4 hidden-md-down wow fadeIn" data-wow-delay="0.6s">
-                    <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
-                        <p lang="en" dir="ltr">Such a fun night getting <a href="https://twitter.com/kubernetesio">@kubernetesio</a> <a href="https://twitter.com/jenkins">@jenkins</a> <a href="https://twitter.com/hashtag/blueocean?src=hash">#blueocean</a> CI/CD going via Multi-branch
-                            Pipelines. So powerful! <a href="https://t.co/1C2xSoEUR3">pic.twitter.com/1C2xSoEUR3</a></p>&mdash; Shaun Domingo (@sdomsta) <a href="https://twitter.com/sdomsta/status/835494160392073216">February 25, 2017</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en">
+                        <p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/blueocean?src=hash">#blueocean</a> is going to change the way you use <a href="https://twitter.com/jenkinsci">@jenkinsci</a> <a href="https://twitter.com/hashtag/ModernUI?src=hash">#ModernUI</a>                            <a href="https://t.co/bD4qaOGQLs">https://t.co/bD4qaOGQLs</a></p>&mdash; Mario Cruz (@mariocruz) <a href="https://twitter.com/mariocruz/status/736250745725550593">May 27, 2016</a></blockquote>
                 </div>
             </div>
         </div>
@@ -329,11 +332,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 push-md-1 col-lg-8 push-lg-2 col-xl-6 push-xl-3 wow fadeIn" data-wow-delay="0.3s">
-                <h2>Continuous Delivery shouldn't be hard.</h2>
+                <h2>Continuous Delivery shouldn't be hard</h2>
                 <p>Blue Ocean focuses on the needs of regular developers <em>just like you</em>.</p>
                 <p>We do all the hard work making things simple so you can get back to building your next big thing.</p>
                 <a class="btn btn-secondary" href="#" role="button">Try Blue Ocean today</a>
-
             </div>
         </div>
 
@@ -341,16 +343,16 @@
 </section>
 
 <div class="socials wow fadeIn" data-wow-delay="4s" data-wow-duration=".5s">
-    <a onclick="goclicky(this); return false;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//dev.brody.com/blueocean/" class="socialLinks socialsFacebook">
+    <a onclick="goclicky(this); return false;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//jenkins.io/projects/blueocean/" class="socialLinks socialsFacebook">
         <i class="icon ion-social-facebook"></i>
         <p class="socialLabel">Share</p>
     </a>
-    <a onclick="goclicky(this); return false;" target="_blank" href="https://twitter.com/share?url=http%3A%2F%2Fdev.brody.com/blueocean/&
+    <a onclick="goclicky(this); return false;" target="_blank" href="https://twitter.com/share?url=http%3A%2F%2Fjenkins.io/projects/blueocean/&
   related=jenkinsci%2Ccloudbees&hashtags=jenkinsci&text=Introducing%20Jenkins%20Blue%20Ocean%20%E2%80%93%20Pipeline%20as%20code,%20a%20new%20setup%20experience%20and%20other%20UI%20improvements." class="socialLinks socialsTwitter">
         <i class="icon ion-social-twitter"></i>
         <p class="socialLabel">Share</p>
     </a>
-    <a onclick="goclicky(this); return false;" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//dev.brody.com/blueocean/&title=Introducing%20Jenkins%20Blue%20Ocean&summary=Jenkins%20Blue%20Ocean%20brings%20Pipeline%20as%20code,%20a%20new%20setup%20experience%20and%20other%20UI%20improvements%20all%20while%20maintaining%20total%20backwards%20compatibility%20with%20existing%20Jenkins%20installations.&source="
+    <a onclick="goclicky(this); return false;" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//jenkins.io/projects/blueocean/&title=Introducing%20Jenkins%20Blue%20Ocean&summary=Jenkins%20Blue%20Ocean%20brings%20Pipeline%20as%20code,%20a%20new%20setup%20experience%20and%20other%20UI%20improvements%20all%20while%20maintaining%20total%20backwards%20compatibility%20with%20existing%20Jenkins%20installations.&source="
         class="socialLinks socialsLinkedin">
         <i class="icon ion-social-linkedin"></i>
         <p class="socialLabel">Share</p>
@@ -367,12 +369,6 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript" src="js/wow.js"></script>
-
-<script>
-    new WOW().init();
-</script>
 
 <script>
     (function(i, s, o, g, r, a, m) {
@@ -395,9 +391,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
 <script src="js/script.js" charset="utf-8"></script>
 
 </body>

@@ -16,6 +16,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  line-height: 1.2;
   color: #4a4a4a; }
 
 h1 {
@@ -25,7 +26,8 @@ h1 {
       font-size: 34px; } }
 
 h2 {
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 1rem; }
   @media (min-width: 767px) {
     h2 {
       font-size: 28px; } }
@@ -155,7 +157,7 @@ p {
       display: block;
       font-size: 0.65em;
       opacity: 0.5;
-      margin-bottom: 6px; }
+      margin-bottom: .25rem; }
   .header a.btn {
     margin: 0 4px; }
   @media (min-width: 767px) {
