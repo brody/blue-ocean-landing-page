@@ -50,6 +50,9 @@ p {
         font-size: 15px;
         line-height: 21px; } }
 
+.wow {
+  visibility: hidden; }
+
 .btn {
   border-radius: 3px;
   -webkit-transition: all 0.3s ease-out;
@@ -326,12 +329,9 @@ section {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
-    .features .col-lg-4 .icon span {
-      margin-left: 2px; }
     .features .col-lg-4 .icon svg {
       height: 48px;
       width: 35px;
-      margin-left: 2px;
       padding-top: 12px; }
       .features .col-lg-4 .icon svg path {
         fill: #4a90e2; }

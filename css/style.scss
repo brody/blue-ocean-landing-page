@@ -95,6 +95,10 @@ p {
     }
 }
 
+.wow {
+    visibility: hidden;
+}
+
 .btn {
     border-radius: 3px;
     -webkit-transition: all 0.3s ease-out;
@@ -497,13 +501,13 @@ section {
             transition: all 0.5s ease-out;
 
             span {
-                margin-left: 2px;
+                // margin-left: 2px;
             }
 
             svg {
               height: 48px;
               width: 35px;
-              margin-left: 2px;
+              // margin-left: 2px;
               padding-top: 12px;
               path {
                 fill: $blue;
