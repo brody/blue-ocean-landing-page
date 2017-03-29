@@ -487,7 +487,8 @@ section {
         padding: 5% 0; } }
     @media (min-width: 1200px) {
       .modal-dialog .modal-body {
-        width: 100%; } }
+        width: 100%;
+        padding: calc((100vh - 640px) / 2 - 55px) 0; } }
   @media (min-width: 1200px) {
     .modal-dialog {
       max-width: 1140px;

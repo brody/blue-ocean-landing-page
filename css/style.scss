@@ -716,6 +716,7 @@ section {
         }
         @include breakpoint(lg) {
             width: 100%;
+            padding: calc((100vh - 640px) / 2 - 55px) 0;
         }
     }
     @include breakpoint(lg) {
