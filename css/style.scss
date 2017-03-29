@@ -3,6 +3,8 @@ $lightGray: #F8F9FB;
 $black: #4A4A4A;
 $gray: #9B9B9B;
 $blue: #4A90E2;
+$darkBlue: #010B19;
+
 // mixins
 @mixin breakpoint($class) {
      @if $class == xs{
@@ -140,9 +142,9 @@ p {
 
         &:focus,
         &:hover {
-            background-color: rgba($blue, .05);
+            background-color: rgba($blue, .12);
             border-color: rgba($blue, .75);
-            color: darken($blue, 10%);
+            color: darken($blue, 15%);
         }
 
         &:active,
@@ -372,7 +374,7 @@ section {
         &::after {
             width: 100%;
             height: 100%;
-            background-color: rgba(#000, .25);
+            background-color: rgba($darkBlue, .3);
             content: "";
             display: block;
             position: absolute;
@@ -390,6 +392,7 @@ section {
             top: calc(50% - 60px);
             left: calc(50% - 60px);
             color: #fff;
+            opacity: .9;
             border: 5px solid #fff;
             border-radius: 200px;
             padding: 30px;
@@ -416,11 +419,11 @@ section {
 
         &:hover {
             &::after {
-                background-color: rgba(#000, .35);
+                background-color: rgba($darkBlue, .4);
             }
 
             span {
-                opacity: 0.5;
+                opacity: 1;
             }
         }
     }
