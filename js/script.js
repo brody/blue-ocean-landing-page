@@ -56,3 +56,9 @@ $(function() {
     });
   });
 });
+
+$("#videoModal").on('hide.bs.modal', function(){
+  var theModal = $(".video").data("target"),
+  videoSRC = $(".video").attr("data-video");
+  $(theModal + ' iframe').attr('src', videoSRC); //esc
+});
